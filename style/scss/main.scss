@@ -1,5 +1,6 @@
 $main_font: 'PT Sans', sans-serif;
 $title_font: 'Cormorant Infant', serif;
+$green: #48974c;
 
 *,
 *::after,
@@ -9,10 +10,15 @@ $title_font: 'Cormorant Infant', serif;
 body{
     font-family: $main_font;
     font-size: 16px;
+    line-height: 24px;
 }
 ul{
     list-style: none;
     padding-left: 0;
+    margin: 0;
+}
+h1{
+    margin: 0;
 }
 a{
     text-decoration: none;
@@ -22,4 +28,40 @@ a{
     max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
+    color: #262626;
+}
+.header{
+    &__inner{
+        padding-top: 40px;
+    }
+    &__title{
+        text-align: center;
+        font-family: $title_font;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 10px;
+    }
+    &__desc{
+        text-align: center;
+        font-family: $title_font;
+        font-style: italic;
+        color: #595959;
+        margin-bottom: 45px;
+    }
+}
+.menu{
+    &-list{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #e6e6e6;
+        padding: 25px 0;
+    }
+    &-list__item{
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    &-list__item:hover{
+        color: $green;
+    }
 }

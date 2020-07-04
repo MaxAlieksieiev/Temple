@@ -7,11 +7,17 @@
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
+  line-height: 24px;
 }
 
 ul {
   list-style: none;
   padding-left: 0;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
 }
 
 a {
@@ -23,4 +29,38 @@ a {
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
+  color: #262626;
+}
+
+.header__inner {
+  padding-top: 40px;
+}
+.header__title {
+  text-align: center;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 10px;
+}
+.header__desc {
+  text-align: center;
+  font-family: "Cormorant Infant", serif;
+  font-style: italic;
+  color: #595959;
+  margin-bottom: 45px;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e6e6e6;
+  padding: 25px 0;
+}
+.menu-list__item {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.menu-list__item:hover {
+  color: #48974c;
 }
