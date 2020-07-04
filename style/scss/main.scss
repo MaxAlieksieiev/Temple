@@ -1,0 +1,25 @@
+$main_font: 'PT Sans', sans-serif;
+$title_font: 'Cormorant Infant', serif;
+
+*,
+*::after,
+*::before{
+    box-sizing: border-boxd;
+}
+body{
+    font-family: $main_font;
+    font-size: 16px;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.container{
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
