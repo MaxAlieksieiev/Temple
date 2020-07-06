@@ -180,6 +180,9 @@ body {
   font-size: 24px;
   line-height: 26px;
 }
+.title-content--smaller {
+  font-size: 24px;
+}
 
 .text {
   font-family: "Open Sans", sans-serif;
@@ -324,4 +327,30 @@ body {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   color: #262626;
+}
+
+.banners {
+  background-color: #f1f1f1;
+}
+.banners__inner {
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.banners__left-side, .banners__right-side {
+  background-color: #fff;
+}
+.banners__left-side {
+  padding: 30px 35px 35px;
+  margin-right: 30px;
+}
+.banners__image {
+  margin-top: 25px;
+}
+.banners__right-side {
+  max-width: 746px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
