@@ -27,7 +27,7 @@ h1, p{
 }
 body{
     font-size: 16px;
-    height: 24px;
+    
 }
 .header{
     &__inner{
@@ -44,6 +44,7 @@ body{
     }
     &__desc{
         font-family: $font_title;
+        line-height: 24px;
         text-align: center;
         font-style: italic;
         font-weight: 300;
@@ -69,6 +70,10 @@ body{
     }
     &-list__link:hover{
         color: $green;
+    }
+    &--footer{
+        border-top: none;
+        
     }
 }
 .slider{
@@ -233,6 +238,7 @@ body{
 .social-networks{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 171px;
 }
 .aside{
@@ -356,4 +362,70 @@ body{
         justify-content: center;
         align-items: center;
     }
+}
+.footer{
+    background-color: #404040;
+    &__inner{
+        padding-top: 50px;
+    }
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: flex-start;
+    }
+    &__content-left{
+        max-width: 455px;
+        width: 100%;
+        color: #ffffff;
+    }
+    &__title{
+        font-size: 36px;
+        // line-height: 42px;
+        font-weight: 700;
+        font-family: $font_title;
+    }
+    &__desc{
+        margin-top: 15px;
+        font-family: $font_title;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 24px;
+    }
+    &__content-center{
+        max-width: 291px;
+        width: 100%;
+    }
+    &__content-center .menu-list{
+        flex-direction: column;
+    }
+    &__content-center .menu-list__item{
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    &__content-center .menu-list__link{
+        color: #fff;
+    }
+    &__content-center .menu-list__link:hover{
+        color: $green;
+    }
+
+    &__contet-right{
+        max-width: 180px;
+        width: 100%;
+    }
+    &__copy{
+        border-top: 1px solid #808080;
+        margin-top: 50px;
+        padding: 20px 0;
+        font-family: $font_text;
+        font-size: 14px;
+        color: #999999;
+        font-weight: 400;
+    }
+}
+.counter{
+    margin-top: 33px;
+    display: flex;
+    justify-content: flex-end;
 }
