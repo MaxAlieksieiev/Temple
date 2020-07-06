@@ -22,7 +22,7 @@ h1, p{
 }
 .container{
     max-width: 1170px;
-    padding: 0 18px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 body{
@@ -79,7 +79,7 @@ body{
 .slider{
    &__image{
         width: 100vw;
-        height: 579px;
+        height: 100vh;
     }
     &__inner{
         max-width: 552px;
@@ -129,9 +129,15 @@ body{
 .content{
     background-color: #f1f1f1;
     &__inner{
+        // max-width: 1134px;
         padding: 30px 0 70px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__image{
+        width: 100%;
+        height: auto;
     }
 }
 .main-content{
@@ -172,7 +178,6 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
     }
 }
 .title-content{
@@ -255,7 +260,7 @@ body{
         margin-bottom: 1px;
         padding: 25px;
         display: flex;
-        flex-direction: column;    
+        flex-direction: column;   
     }
     &__link{
         margin-top: auto;
@@ -282,13 +287,15 @@ body{
     }
     &__pages{
         margin-top: 25px;
+        max-width: 400px;
+        
     }
 }
 .pagination{
     display: flex;
-    max-width: 323px;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     &__link{
         width: 56px;
         height: 56px;
@@ -342,6 +349,7 @@ body{
         padding: 70px 0;
         display: flex;
         justify-content: space-between;
+        
     }
     &__left-side,
     &__right-side{
@@ -354,9 +362,12 @@ body{
     &__image{
         margin-top: 25px;
     }
+    &__img{
+        width: 100%;
+        height: 100%;
+    }
     &__right-side{
         max-width: 746px;
-        // width: 100%;
         flex-grow: 1;
         display: flex;
         justify-content: center;

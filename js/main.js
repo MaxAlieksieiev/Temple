@@ -5,6 +5,7 @@ $(document).ready(function(){
         dots: true,
         infinite: true,
         arrows: false,
+        
     });
     
   });
