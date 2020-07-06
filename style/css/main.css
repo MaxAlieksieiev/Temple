@@ -193,16 +193,20 @@ body {
 .btn {
   color: #48974c;
   border: 1px solid #48974c;
-  padding: 23px 40px;
+  padding: 17px 40px 17px;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 20px;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
-.btn:hover {
+.btn--green {
   color: #fff;
   background-color: #48974c;
+}
+.btn--arrow {
+  margin-left: 25px;
+  display: inline-block;
 }
 
 .social-networks {
@@ -234,11 +238,9 @@ body {
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
-  line-height: 21px;
   position: relative;
   display: flex;
   align-items: center;
-  height: 21px;
 }
 .aside__link::before {
   content: "";
@@ -250,7 +252,38 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
+.aside__pages {
+  margin-top: 25px;
+}
 
 .pagination {
   display: flex;
+  max-width: 323px;
+  justify-content: space-between;
+  align-items: center;
+}
+.pagination__link {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-right: 10px;
+  color: #262626;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.pagination__left {
+  margin-right: 18px;
+}
+.pagination__right {
+  margin-left: 8px;
+}
+.pagination__link--dots {
+  margin-right: 10px;
+}
+.pagination__link--active {
+  color: #fff;
+  background-color: #48974c;
 }

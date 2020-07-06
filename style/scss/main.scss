@@ -194,15 +194,21 @@ body{
 .btn{
     color: $green;
     border: 1px solid $green;
-    padding: 23px 40px;
+    padding: 17px 40px 17px;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 20px;
     font-family: $font_text;
     font-weight: 700;
     text-transform: uppercase;
-    &:hover{
+    &--green{
         color: #fff;
         background-color: $green;
+        
+    }
+    &--arrow{
+        margin-left: 25px;
+        display: inline-block;
+        
     }
 }
 .social-networks{
@@ -234,11 +240,10 @@ body{
         font-weight: 700;
         font-size: 12px;
         text-transform: uppercase;
-        line-height: 21px;
         position: relative;
         display: flex;
         align-items: center;
-        height: 21px;
+        
     }
     &__link::before{
         content: "";
@@ -250,7 +255,38 @@ body{
         top: 50%;
         transform: translateY(-50%);
     }
+    &__pages{
+        margin-top: 25px;
+    }
 }
 .pagination{
     display: flex;
+    max-width: 323px;
+    justify-content: space-between;
+    align-items: center;
+    &__link{
+        width: 56px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        margin-right: 10px;
+        color: $color_title;
+        font-family: $font_text;
+        font-weight: 400;
+    }
+    &__left{
+        margin-right: 18px;
+    }
+    &__right{
+        margin-left: 8px;
+    }
+    &__link--dots{
+        margin-right: 10px;
+    }
+    &__link--active{
+        color: #fff;
+        background-color: $green;
+    }
 }
