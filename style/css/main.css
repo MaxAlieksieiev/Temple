@@ -207,6 +207,23 @@ body {
 .btn--arrow {
   margin-left: 25px;
   display: inline-block;
+  padding-left: 56px;
+  padding-right: 66px;
+  position: relative;
+}
+.btn--arrow::after {
+  content: '';
+  background-image: url("/images/arrow.png");
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 8px;
+  position: absolute;
+  top: 22px;
+  left: 113px;
+}
+.btn--form {
+  outline: none;
+  cursor: pointer;
 }
 
 .social-networks {
@@ -236,7 +253,7 @@ body {
   color: #48974c;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
   position: relative;
   display: flex;
@@ -286,4 +303,25 @@ body {
 .pagination__link--active {
   color: #fff;
   background-color: #48974c;
+}
+
+.subscribe {
+  background-image: url("/images/subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -275px 0px;
+}
+.subscribe__inner {
+  padding: 434px 0 70px;
+}
+.subscribe-form__input {
+  padding: 19px 48px 19px 19px;
+  border: none;
+  outline: none;
+  margin-right: -4px;
+}
+.subscribe-form__input::placeholder {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #262626;
 }

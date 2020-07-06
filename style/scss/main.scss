@@ -208,7 +208,23 @@ body{
     &--arrow{
         margin-left: 25px;
         display: inline-block;
-        
+        padding-left: 56px;
+        padding-right: 66px;
+        position: relative;
+    }
+    &--arrow::after{
+        content: '';
+        background-image: url('/images/arrow.png');
+        background-repeat: no-repeat;
+        height: 16px;
+        width: 8px;
+        position: absolute;
+        top: 22px;
+        left: 113px;
+    }
+    &--form{
+        outline: none;
+        cursor: pointer;
     }
 }
 .social-networks{
@@ -238,7 +254,7 @@ body{
         color: $green;
         font-family: $font_text;
         font-weight: 700;
-        font-size: 12px;
+        font-size: 13px;
         text-transform: uppercase;
         position: relative;
         display: flex;
@@ -288,5 +304,26 @@ body{
     &__link--active{
         color: #fff;
         background-color: $green;
+    }
+}
+.subscribe{
+    background-image: url('/images/subscribe.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -275px 0px;
+    &__inner{
+        padding: 434px 0 70px;
+        
+    }
+    &-form__input{
+        padding: 19px 48px 19px 19px;
+        border: none;
+        outline: none;
+        margin-right: -4px;
+    }
+    &-form__input::placeholder{
+        font-size: 18px;
+        font-family: $font_text;
+        color: $color_title;
     }
 }
