@@ -174,7 +174,7 @@ body{
 }
 .main-content__data::before{
   content: "";
-  background-image: url('/images/calendar.png');
+  background-image: url('../../images/calendar.png');
   width: 15px;
   height: 16px;
   position: absolute;
@@ -231,7 +231,7 @@ body{
 }
 .btn--arrow::after{
   content: "";
-  background-image: url('/images/arrow.png');
+  background-image: url('../../images/arrow.png');
   background-repeat: no-repeat;
   height: 16px;
   width: 8px;
@@ -284,7 +284,7 @@ body{
 }
 .aside__link::before{
   content: "";
-  background-image: url("/images/details.png");
+  background-image: url("../../images/details.png");
   height: 16px;
   width: 16px;
   position: absolute;
@@ -322,7 +322,7 @@ body{
 
 /* subscribe */
 .subscribe {
-  background-image: url("/images/subscribe.jpg");
+  background-image: url("../../images/subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -330px 0px;
