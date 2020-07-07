@@ -5,8 +5,7 @@
     flex-direction: column;
   }
   .main-content {
-  }
-  .main-content__inner {
+    margin-right: 0;
   }
   .main-content__list {
     flex-direction: row;
@@ -18,44 +17,20 @@
   .main-content__item + .main-content__item{
     margin-left: 10px;
   }
-  .main-content__image {
-  }
-  .content__image {
-  }
-  .main-content__data {
-  }
-  .title-content {
-  }
-  .text {
-  }
-  .main-content__bottom {
-  }
-  .btn {
-  }
-  .social-networks {
-  }
-  .social-networks__item {
-  }
-  .social-networks__link {
-  }
-  .social-networks__image {
-  }
-  .main-content__button {
-  }
-  .btn--arrow {
-  }
-  .btn--green {
-  }
+
   .aside {
     margin-top: 20px;
   }
   .aside__inner {
   }
   .aside__list {
-  
+    max-width: inherit;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
   }
   .aside__item {
-    min-width: 262px;
+    width: 262px;
   }
   .title-content--aside {
   }
@@ -81,20 +56,12 @@
   }
 }
 
+@media (max-width: 1104px){
+  
+}
 
 @media(max-width: 900px){
-  .header {
-  }
-  .container {
-  }
-  .header__inner {
-  }
-  .header__title {
-  }
-  .header__desc {
-  }
-  .menu {
-  }
+  
   .menu-list {
     flex-direction: column;
     text-align: center;
@@ -129,7 +96,54 @@
     font-size: 14px;
     line-height: 20px;
   }
+  .main-content__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aside__list{
+    justify-content: center;
+  }
+  .aside__pages{
+    margin: 25px auto;
+  }
+  .main-content__button {
+    display: flex;
+    justify-content: center;
+  }
+  .pagination{
+    margin: 0 auto;
+  }
   
+  
+}
+@media(max-width: 579px){
+  .aside__item {
+    width: 250px;
+  }
+}
+@media(max-width: 550px){
+  .aside__item {
+    width: 235px;
+  }
+}
+@media(max-width:525px){
+  .aside__item {
+    width: 75%;
+  }
+}
+@media (max-width: 450px){
+  .main-content__bottom {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .main-content__item .text{
+    margin-bottom: 20px;
+  }
+  .main-content__bottom .social-networks{
+    order: -1;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 390px){
@@ -137,10 +151,26 @@
     bottom: 60px;
     left: 60px;
   }
+  .aside__item {
+    width: 275px;
+  }
+  .pagination{
+    justify-content: space-evenly;
+  }
+  .pagination__link--dots,
+  .pagination__link--last{
+    display: none;
+  }
+  
 }
 
 @media (min-width: 391px) and (max-width: 1125px){
   .slider .slick-dots {
     left: 60px;
+  }
+}
+@media (max-width: 320px){
+  .main-content__button {
+    justify-content: flex-start;
   }
 }

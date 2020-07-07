@@ -247,6 +247,7 @@ body{
   color: #fff;
   background-color: var(--green);
 }
+
 /* aside */
 .aside {
 }
@@ -306,10 +307,7 @@ body{
   align-items: center;
   max-width: 394px;
 }
-.pagination__item {
-  
 
-}
 .pagination__left {
 }
 .pagination__link {
