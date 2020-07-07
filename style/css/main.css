@@ -355,3 +355,44 @@ body{
 
 /* subscribe */
 
+/* banners */
+.banners {
+  background-color: #eeeeee;
+}
+
+.banners__inner {
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.banners__left-side,
+.banners__right-side {
+  background-color: #fff;
+}
+.banners__left-side{
+  margin-right: 30px;
+  padding: 35px;
+}
+.title-content {
+}
+.title-content--smaller {
+  font-size: 24px;
+}
+.banners__image {
+  margin-top: 20px;
+}
+.banners__img {
+  width: 100%;
+  height: 100%;
+}
+.banners__right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-basis: 358px;
+}
+/* banners */
+
+/* footer */
+/* footer */

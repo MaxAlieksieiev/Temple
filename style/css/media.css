@@ -117,6 +117,21 @@
   
   
 }
+@media (max-width: 800px){
+  .banners__inner{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .banners__left-side{
+    margin-bottom: 10px;
+  }
+  .banners__right-side{
+    height: 261px;
+  }
+}
+
+
+
 @media(max-width: 579px){
   .aside__item {
     width: 250px;
@@ -150,6 +165,13 @@
   }
   .subscribe__title{
     margin-bottom: 10px;
+  }
+  .banners__left-side{
+    padding: 10px;
+    margin-right: 0;
+  }
+  .banners__right-side{
+    height: 261px;
   }
 }
 
